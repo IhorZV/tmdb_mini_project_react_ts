@@ -49,3 +49,20 @@
 .pagination :global(.rc-pagination-item-active a:hover) {
     color: white;
 }
+
+@media (max-width: 500px) {
+    :global(.rc-pagination) {
+        font-size: 12px;
+        gap: 2px;
+    }
+
+    :global(.rc-pagination-item),
+    :global(.rc-pagination-prev),
+    :global(.rc-pagination-next) {
+        min-width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 10px;
+        padding: 0;
+    }
+}
