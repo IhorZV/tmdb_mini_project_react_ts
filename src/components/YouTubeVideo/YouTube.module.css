@@ -1,0 +1,7 @@
+.videoWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    aspect-ratio: 16 / 9;
+    margin: 10px auto;
+}

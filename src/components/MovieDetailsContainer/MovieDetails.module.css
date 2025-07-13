@@ -1,0 +1,46 @@
+.original_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.wrapper_one {
+    display: flex;
+
+}
+
+.poster {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.poster img {
+    width: 35%;
+}
+
+.infoBox {
+    font-size: 25px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.overview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.overview div{
+    width: 50%;
+}
+
+.Video{
+    display: flex;
+    justify-content: center;
+}
