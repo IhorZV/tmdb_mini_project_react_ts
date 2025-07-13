@@ -25,7 +25,7 @@ const MovieDetails: FC<IProps> = ({movieDetails}) => {
                     <div>Release date: {release_date}</div>
                     <div>Budget: {budget === 0 ? "No information" : `${budget}$`}</div>
                     <div>Runtime: {runtime} m</div>
-                    <div>Tagline: "{tagline}"</div>
+                    <div>Tagline: "{tagline === "" ? "No information" : `${tagline}`}"</div>
                 </div>
             </div>
 
