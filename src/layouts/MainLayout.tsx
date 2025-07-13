@@ -1,7 +1,7 @@
 import React from 'react';
 import {Outlet} from "react-router-dom";
 
-import {Footer, Header} from "../components";
+import {Footer, Genres, Header} from "../components";
 
 const MainLayout = () => {
     return (

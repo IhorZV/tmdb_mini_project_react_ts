@@ -5,11 +5,13 @@ import {IMovieDetails, IPaginatedMoviesResponse, IVideoResponse} from "../interf
 
 const movieService = {
 
-    getAll: (page = 1):IRes<IPaginatedMoviesResponse> =>
+    getAll: (page = 1): IRes<IPaginatedMoviesResponse> =>
         apiService.get(urls.movies, {params: {page}}),
-    getMovieById:(id:number):IRes<IMovieDetails>=>
+
+    getMovieById: (id: number): IRes<IMovieDetails> =>
         apiService.get(`${urls.movie}/${id}`),
-    getVideoById:(id:number):IRes<IVideoResponse>=>
+
+    getVideoById: (id: number): IRes<IVideoResponse> =>
         apiService.get(`${urls.movie}/${id}/videos`)
 }
 

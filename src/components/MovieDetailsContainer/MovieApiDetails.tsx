@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 
 import {movieService} from "../../services";
-import {IMovieDetails} from "../../interfaces/IMovieDetails";
 import {MovieDetails} from "./MovieDetails";
+import {IMovieDetails} from "../../interfaces";
 
 const MovieApiDetails = () => {
 

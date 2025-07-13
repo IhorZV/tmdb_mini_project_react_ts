@@ -1,0 +1,10 @@
+.genre{
+    margin-right: 7px;
+   margin-left: 7px;
+    color: #f18d00;
+}
+.genre:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+}

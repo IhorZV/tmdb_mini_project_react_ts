@@ -1,0 +1,10 @@
+.genre{
+    padding-left: 10px;
+    font-size: 16px;
+}
+.genre:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+    scale: 1.05;
+}
