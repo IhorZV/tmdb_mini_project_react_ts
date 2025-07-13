@@ -1,5 +1,12 @@
 .wrapper_movie {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 20px;
+}
+.PaginationContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }

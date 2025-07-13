@@ -1,6 +1,5 @@
-import {FC} from "react";
-import ReactStars from "react-rating-stars-component";
-
+import { FC } from "react";
+import Rating from "@mui/material/Rating";
 
 interface IProps {
     vote_average: number;
@@ -8,15 +7,13 @@ interface IProps {
 
 const StarsRating: FC<IProps> = ({ vote_average }) => {
     return (
-        <ReactStars
-            count={5}
+        <Rating
+            name="read-only"
             value={vote_average / 2}
-            size={24}
-            activeColor="#ffd700"
+            precision={0.5}
+            readOnly
         />
-
     );
 };
 
 export { StarsRating };
-

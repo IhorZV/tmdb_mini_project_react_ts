@@ -1,0 +1,51 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination :global(.rc-pagination) {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination :global(.rc-pagination-item),
+.pagination :global(.rc-pagination-prev),
+.pagination :global(.rc-pagination-next) {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination :global(.rc-pagination-item-active) {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.pagination :global(.rc-pagination-disabled) {
+    color: white;
+    cursor: not-allowed;
+}
+
+.pagination :global(.rc-pagination-jump-next),
+.pagination :global(.rc-pagination-jump-prev) {
+    display: none;
+}
+
+:global(.rc-pagination-item-active) {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+.pagination :global(.rc-pagination-item-active a) {
+    color: white;
+}
+.pagination :global(.rc-pagination-item-active a:hover) {
+    color: white;
+}
