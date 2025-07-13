@@ -11,7 +11,7 @@ interface IProps extends PropsWithChildren {
 
 const MovieDetails: FC<IProps> = ({movieDetails}) => {
 
-    const {id, original_title, release_date, poster_path, title, budget, overview} = movieDetails;
+    const {id, original_title, release_date, poster_path, runtime, budget, overview, tagline} = movieDetails;
 
     return (
         <div>
@@ -24,6 +24,8 @@ const MovieDetails: FC<IProps> = ({movieDetails}) => {
                 <div className={css.infoBox}>
                     <div>Release date: {release_date}</div>
                     <div>Budget: {budget === 0 ? "No information" : `${budget}$`}</div>
+                    <div>Runtime: {runtime} m</div>
+                    <div>Tagline: "{tagline}"</div>
                 </div>
             </div>
 
