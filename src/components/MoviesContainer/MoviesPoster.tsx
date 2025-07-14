@@ -20,9 +20,7 @@ const MoviesPoster: FC<IProps> = ({moviePoster}) => {
         <div className={css.wrapper_cardMovie}>
 
             <div onClick={()=>navigate(`/movies/${id}`)}>
-                {/*<NavLink to={`${id}`}>*/}
                     <img className={css.img} src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt="poster"/>
-                {/*</NavLink>*/}
             </div>
 
             <div className={css.name} onClick={()=>navigate(`/movies/${id}`)}>

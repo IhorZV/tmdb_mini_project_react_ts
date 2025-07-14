@@ -30,7 +30,7 @@ const MoviesByGenreId: FC<IProps> = () => {
                     key={moviePoster.id} moviePoster={moviePoster}/>)}
             </div>
             <div className={css.PaginationContainer}>
-                <PaginationContainer/>
+                {movieList && <PaginationContainer movieList={movieList}/>}
             </div>
         </div>
 
