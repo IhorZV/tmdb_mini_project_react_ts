@@ -1,6 +1,7 @@
 import React from 'react';
 
-import {MoviesByGenreId} from "../components/GenresContainer/MoviesByGenreId";
+import {MoviesByGenreId} from "../components";
+
 
 const GenresPage = () => {
     return (

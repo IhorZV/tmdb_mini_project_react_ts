@@ -2,27 +2,27 @@ import React, {FC, PropsWithChildren, useEffect, useState} from 'react';
 import {useParams, useSearchParams} from "react-router-dom";
 
 import {IPaginatedMoviesResponse} from "../../interfaces";
-import {MoviesPoster} from "../MoviesContainer/MoviesPoster";
-import {PaginationContainer} from "../PaginationContainer/PaginationContainer";
-import {genreService} from "../../services/genreService";
 import css from "../MoviesContainer/MoviesList.module.css";
+import {searchService} from "../../services/searchService";
+import { MoviesPoster } from '../MoviesContainer/MoviesPoster';
+import {PaginationContainer} from "../PaginationContainer/PaginationContainer";
 
 interface IProps extends PropsWithChildren {
 
 }
 
-const MoviesByGenreId: FC<IProps> = () => {
+const SearchMovieList: FC<IProps> = () => {
 
     const [movieList, setMovieList] = useState<IPaginatedMoviesResponse | null>(null);
     const [query, setQuery] = useSearchParams({page: '1'});
     const page = query.get('page');
-    const {id} = useParams();
+    const {name} = useParams();
 
     useEffect(() => {
 
-        genreService.getAllByGenreId(+page,+id).then(({data}) => setMovieList(data))
+        searchService.getAllBySearch(+page,name).then(({data}) => setMovieList(data))
 
-    }, [page, id]);
+    }, [page, name]);
     return (
         <div>
             <div className={css.wrapper_movie}>
@@ -37,4 +37,4 @@ const MoviesByGenreId: FC<IProps> = () => {
     );
 };
 
-export {MoviesByGenreId};
+export {SearchMovieList};
