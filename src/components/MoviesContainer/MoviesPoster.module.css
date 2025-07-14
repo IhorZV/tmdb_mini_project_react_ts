@@ -13,16 +13,26 @@
     transition: 0.5s;
     border-radius: 6px;
 }
-.name{
-    padding: 5px;
-}
 
 .name {
+    padding: 5px;
     text-decoration: none;
     font-size: 20px;
     color: black;
 }
+
+.nameDark{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
 .name:hover{
+    color: rgba(255, 0, 0, 0.71);
+    cursor: pointer;
+}
+.nameDark:hover{
     color: rgba(255, 0, 0, 0.71);
     cursor: pointer;
 }
@@ -37,6 +47,12 @@
     font-size: 14px;
     color: rgba(0, 0, 0, 0.66);
 }
+.release_dateDark{
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+}
+
 
 .StarsRating{
     display: flex;
