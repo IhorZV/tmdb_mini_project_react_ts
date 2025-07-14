@@ -3,8 +3,6 @@ import React, {useContext} from 'react';
 import css from "./ThemaSwitch.module.css"
 import {Context} from "../../hoc";
 
-
-
 const ThemeSwitch = () => {
 
     const [Thema,setThema] = useContext(Context);

@@ -1,8 +1,8 @@
 import React, {FC, PropsWithChildren, useContext} from 'react';
+import {useNavigate} from "react-router-dom";
 
 import {IMovie} from "../../interfaces";
 import css from './MoviesPoster.module.css'
-import {NavLink, useLocation, useNavigate} from "react-router-dom";
 import {StarsRating} from "../StarsRating/StarsRating";
 import {Context} from "../../hoc";
 

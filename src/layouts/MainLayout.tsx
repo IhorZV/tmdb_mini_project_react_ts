@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {Outlet} from "react-router-dom";
 
-import {Footer, Genres, Header} from "../components";
+import {Footer, Header} from "../components";
 import {Context} from "../hoc";
 import css from "./MainLayout.module.css"
 

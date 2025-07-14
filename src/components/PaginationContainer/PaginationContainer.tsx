@@ -13,7 +13,6 @@ interface IProps extends PropsWithChildren {
 
 const PaginationContainer: FC<IProps> = ({movieList}) => {
 
-    // const safeTotalPages = movieList.total_pages ?? 1
     const [query, setQuery] = useSearchParams({page: '1'});
 
     const onPageChange = (newPage: number) => {
