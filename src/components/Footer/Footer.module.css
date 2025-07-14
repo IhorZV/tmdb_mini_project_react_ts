@@ -15,3 +15,10 @@
     border: 1px solid beige;
     padding: 5px;
 }
+
+@media (max-width: 500px){
+    .footer{
+        font-size: 14px;
+    }
+
+}

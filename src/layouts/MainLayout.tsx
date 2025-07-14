@@ -12,7 +12,7 @@ const MainLayout = () => {
     return (
         <div className={Thema ? css.body : css.bodydark}>
             <Header/>
-            <Outlet/>
+            <Outlet />
             <Footer/>
         </div>
     );

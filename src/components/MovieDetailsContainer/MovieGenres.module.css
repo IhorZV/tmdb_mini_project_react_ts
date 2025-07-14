@@ -8,3 +8,11 @@
     text-decoration: underline;
     color: red;
 }
+
+@media (max-width: 500px){
+    .genre{
+        margin-right: 3px;
+        margin-left: 3px;
+
+    }
+}

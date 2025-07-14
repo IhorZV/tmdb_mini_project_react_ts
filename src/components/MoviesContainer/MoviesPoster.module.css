@@ -59,3 +59,28 @@
     padding: 5px;
     font-size: 16px;
 }
+
+@media (max-width: 700px) {
+    .wrapper_cardMovie{
+        width: 200px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 490px) {
+    .wrapper_cardMovie{
+        width: 150px;
+        margin: 6px;
+    }
+    .name {
+        font-size: 15px;
+    }
+    .release_date{
+        font-size: 12px;
+    }
+    .StarsRating{
+        display: flex;
+        padding: 5px;
+        font-size: 10px;
+    }
+}

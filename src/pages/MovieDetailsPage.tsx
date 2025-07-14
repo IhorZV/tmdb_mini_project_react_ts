@@ -1,10 +1,11 @@
 import React from 'react';
 
 import {MovieApiDetails} from "../components";
+import css from "./PagesCss.module.css"
 
 const MovieDetailsPage = () => {
     return (
-        <div>
+        <div className={css.container}>
             <MovieApiDetails/>
         </div>
     );
