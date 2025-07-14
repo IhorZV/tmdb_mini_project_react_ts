@@ -26,9 +26,7 @@ const MoviesPoster: FC<IProps> = ({moviePoster}) => {
             </div>
 
             <div className={css.name} onClick={()=>navigate(`/movies/${id}`)}>
-                {/*<NavLink to={`${id}`}>*/}
                     {original_title}
-                {/*</NavLink>*/}
             </div>
 
             <div className={css.release_date}>
